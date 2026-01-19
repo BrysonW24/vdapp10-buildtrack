@@ -1,43 +1,30 @@
 # BuildTrack
 
-Residential build progress tracking for builders, subcontractors, and clients.
+A Vivacity Digital Expo app with standard navigation, theming, and UI scaffolding.
 
-## Highlights
+## Overview
 
-- Job-based dashboards with stage progress and task checklists
-- Subbie-friendly updates with photos, notes, and timestamps
-- Client-friendly timeline, approvals, and issue visibility
-- One source of truth per build
+- App slug: `buildtrack`
+- iOS bundle ID: `com.vivacity.buildtrack`
+- Android package: `com.vivacity.buildtrack`
 
-## MVP Screens
-
-1. Home (dashboard snapshot)
-2. Jobs (active jobs list)
-3. Timeline (stage milestones)
-4. Issues (approvals + blockers)
-5. Settings (notifications + field updates)
-
-## Quick Start
+## Quick start
 
 ```bash
-cd vdapp10-buildtrack
 npm install
 npm run ios
 ```
 
-## Project Structure
+## Scripts
 
+- `npm run ios` - run on iOS simulator
+- `npm run ios:simulator` - iOS with cache clear
+- `npm run android` - run on Android emulator
+- `npm run web` - run on web
+
+## App Store prep (EAS)
+
+```bash
+eas build -p ios --profile production
+eas submit -p ios --profile production
 ```
-vdapp10-buildtrack/
-├── App.tsx
-├── app.json
-├── src/
-│   ├── navigation/
-│   ├── screens/
-│   ├── store/
-│   └── theme/
-```
-
-## Notes
-
-- Replace placeholder data in `src/screens` with live job/task feeds.
