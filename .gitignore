@@ -1,0 +1,30 @@
+# OSX
+.DS_Store
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Expo
+.expo/
+dist/
+web-build/
+
+# Environment
+.env
+.env.local
+.env.production
+
+# iOS/Android builds
+ios/
+android/
+build/
+*.ipa
+*.apk
+
+# TypeScript
+*.tsbuildinfo
+
+# Testing
+coverage/
